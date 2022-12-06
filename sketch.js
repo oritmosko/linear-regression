@@ -62,13 +62,13 @@ function draw() {
   line(x1, y1, x2, y2);
 }
 
-function renderNew() {
-  console.log("got here");
-  push();
-  background(0);
-  x_vals = [];
-  y_vals = [];
-  a_tensor = tf.variable(tf.scalar(random(1)));
-  b_tensor = tf.variable(tf.scalar(random(1)));
-  pop();
-}
+// function renderNew() {
+//   console.log("got here");
+//   push();
+//   background(0);
+//   x_vals = [];
+//   y_vals = [];
+//   a_tensor = tf.variable(tf.scalar(random(1)));
+//   b_tensor = tf.variable(tf.scalar(random(1)));
+//   pop();
+// }
