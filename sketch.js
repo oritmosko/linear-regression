@@ -61,3 +61,13 @@ function draw() {
   strokeWeight(2);
   line(x1, y1, x2, y2);
 }
+
+function renderNew() {
+	push();
+	background(0);
+  x_vals = [];
+  y_vals = [];
+  a_tensor = tf.variable(tf.scalar(random(1)));
+  b_tensor = tf.variable(tf.scalar(random(1)));
+	pop();
+}
