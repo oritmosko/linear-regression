@@ -1,3 +1,5 @@
+// Based on Daniel Shiffman's The coding train
+
 let x_vals = [];
 let y_vals = [];
 
@@ -13,7 +15,8 @@ function setup() {
 }
 
 function loss(predictions_tensor, labels_tensor) {
-  return predictions_tensor.sub(labels_tensor).square().mean();
+//   return predictions_tensor.sub(labels_tensor).square().mean();
+  return tf.losses.meanSquaredError;
 }
 
 function predict(xs_tensor) {
