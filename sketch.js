@@ -15,8 +15,7 @@ function setup() {
 }
 
 function loss(predictions_tensor, labels_tensor) {
-//   return predictions_tensor.sub(labels_tensor).square().mean();
-  return tf.losses.meanSquaredError;
+  return predictions_tensor.sub(labels_tensor).square().mean();
 }
 
 function predict(xs_tensor) {
