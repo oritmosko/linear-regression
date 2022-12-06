@@ -40,7 +40,7 @@ function draw() {
   background(0);
   
   // re-draw the points
-  stroke(200);
+  stroke(255);
   strokeWeight(8);
   for (let i = 0; i < x_vals.length; i++) {
     let px = map(x_vals[i], 0, 1, 0, width);
